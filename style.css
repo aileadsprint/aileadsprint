@@ -25,6 +25,9 @@ a {
   padding: 0 24px;
 }
 
+/* =========================
+NAVBAR
+========================= */
 .navbar {
   border-bottom: 1px solid #1F2937;
 }
@@ -51,6 +54,9 @@ nav a {
   color: #FFFFFF;
 }
 
+/* =========================
+HERO
+========================= */
 .hero {
   padding: 120px 0;
   text-align: center;
@@ -59,6 +65,7 @@ nav a {
 .hero h1 {
   font-size: 48px;
   font-weight: 800;
+  line-height: 1.15;
 }
 
 .hero-sub {
@@ -80,6 +87,9 @@ nav a {
   font-weight: 600;
 }
 
+/* =========================
+TRUST STRIP
+========================= */
 .trust {
   padding: 24px 0;
   border-top: 1px solid #1F2937;
@@ -88,6 +98,9 @@ nav a {
   color: #A0AEC0;
 }
 
+/* =========================
+SECTIONS
+========================= */
 .section-dark {
   background: #111827;
   padding: 100px 0;
@@ -95,7 +108,7 @@ nav a {
 
 .services-preview,
 .process-preview {
-  padding: 100px 0;
+  padding: 120px 0;
 }
 
 h2 {
@@ -105,10 +118,15 @@ h2 {
 }
 
 .section-text {
-  max-width: 720px;
+  max-width: 760px;
+  margin: 0 auto;
   color: #A0AEC0;
+  text-align: center;
 }
 
+/* =========================
+GRIDS
+========================= */
 .grid {
   display: grid;
   gap: 32px;
@@ -130,6 +148,9 @@ h2 {
   color: #A0AEC0;
 }
 
+/* =========================
+PROCESS STEPS
+========================= */
 .step {
   text-align: center;
 }
@@ -137,14 +158,35 @@ h2 {
 .step-num {
   color: #3B82F6;
   font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
 }
 
+/* =========================
+FINAL CTA
+========================= */
 .final-cta {
   padding: 100px 0;
   text-align: center;
   background: linear-gradient(135deg, #1E3A8A, #2563EB);
 }
 
+.final-cta h2 {
+  margin-bottom: 12px;
+}
+
+.final-cta p {
+  margin-bottom: 28px;
+  color: #E5E7EB;
+}
+
+.final-cta .btn-primary {
+  margin-top: 12px;
+}
+
+/* =========================
+FOOTER
+========================= */
 .footer {
   padding: 32px 0;
   text-align: center;
@@ -152,12 +194,45 @@ h2 {
   border-top: 1px solid #1F2937;
 }
 
+/* =========================
+PAGE HERO (INNER PAGES)
+========================= */
 .page-hero {
-  padding: 120px 0 80px;
+  padding: 80px 0 60px;
   text-align: center;
 }
 
-.service-block h2,
+.page-subtext {
+  margin-top: 12px;
+  color: #A0AEC0;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================
+SERVICES PAGE GRID
+========================= */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px 80px;
+}
+
+.service-item h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.service-item p {
+  color: #A0AEC0;
+  max-width: 520px;
+}
+
+/* =========================
+PRICING
+========================= */
 .pricing-block h2 {
   margin-top: 48px;
 }
@@ -165,4 +240,22 @@ h2 {
 .note {
   margin-top: 32px;
   color: #A0AEC0;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
 }
